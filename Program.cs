@@ -35,3 +35,26 @@
 // Console.WriteLine($"Количество чисел, делящихся на 7: {countOfSevens}"); 
 
 
+// Задание 3
+int positiveCount = 0;
+int negativeCount = 0;
+
+Console.WriteLine("Вводите числа (0 для окончания ввода):");
+int number = Convert.ToInt32(Console.ReadLine());
+
+while (number != 0)
+{
+    if (number > 0)
+    {
+        positiveCount++;
+    }
+    else if (number < 0)
+    {
+        negativeCount++;
+    }
+
+    number = Convert.ToInt32(Console.ReadLine());
+}
+
+Console.WriteLine($"Положительных чисел: {positiveCount}");
+Console.WriteLine($"Отрицательных чисел: {negativeCount}");
